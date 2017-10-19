@@ -24,6 +24,8 @@ const BrowserWindow = electron.BrowserWindow
 const path = require('path')
 const url = require('url')
 
+app.commandLine.appendSwitch('ignore-certificate-errors');
+
 electron.crashReporter.start({
     productName: 'GraphiQL',
     companyName: 'Redound',
